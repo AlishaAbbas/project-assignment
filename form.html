@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+ body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2a074a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        #div2 {
+            font-style: normal;
+            background-color: rgb(236, 226, 226);
+            text-align: center;
+            padding: 20px; /* Increased padding for content separation */
+        }
+
+        footer {
+            background-color: rgb(49, 49, 206);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        #whatsapp-button {
+            position: fixed;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background-color:transparent;
+
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+        }
+             #Instagram-button a {
+            text-decoration: none;
+            color: transparent;
+            display: block;
+        }
+
+        #instagram-button img {
+            margin-bottom: 3px;
+        }
+
+        /* Add styling for the footer content */
+        #footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #footer-contact {
+            color: rgb(255, 255, 255);
+        }
+        
+    </Style>
+</head>
+<body>
+     <header>
+         <image style="float: left; margin-left: 60px;" src="1652879202-logo-1.png" alt="Error" width="100px;">
+         <h1>Student Enrollment System</h1>
+         <hr style="color: #000;">
+     </header>
+      <div id="div2" style="border-color: black;" text-align: center;  onsubmit="return validateForm();">
+        <form action="index.php" method="post">
+            <fieldset>
+                <br><br><br>
+        <h2>Enter Student Data</h2>
+        <div>
+            <label style="margin: 15px;">First Name:</label>
+            <input type="text" id="Fname" name="Fname" required>
+        </div>
+        <br>
+        <div>
+            <label style="margin: 15px;">Last Name:</label>
+            <input type="text" id="Lname" name="Lname" required>
+        </div>
+        <br>
+        <div>
+            <label style="margin: 10px;">Father Name:</label>
+            <input type="text" id="Fname" name="Fname" required>
+        </div> 
+        <br>
+        <div>
+            <label for="course">Select Departments:</label>
+            <select style="color: #000;" name="Select Departments" id="Select Departments" required>
+                <option value="">--select a Departments Name--</option>
+                <option value="Bs Software Engineering">Bs Software Engineering</option>
+                <option value="Bs Computer Science">Bs Compuer Science</option>
+                <option value="Bs Information Technology">Bs Information Technology</option>
+                <option value="Bs Information Security">Bs Information Security</option>
+                <option value="Bs Zoology">Bs Zoology</option>
+                <option value="Bs Botnay">Bs Botnay</option>
+                <option value="Bs Bio Technology">Bs Bio Technology</option>
+                <option value="Bs English">Bs English</option>
+                <option value="Bs Urdu">Bs Urdu</option>
+                <!-- Add more option as needed -->
+             </select>
+         </div>
+         <div>
+             <br>
+            <label >Student ID:</label>
+            <input type="text" name="student_id" id="id" required>
+        </div>
+        <div>
+             <br>
+            <label style="margin: 31px;" for="email" > Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+              <br>
+            <label style="margin: 24px;" for="Address" >Address:</label>
+             <input type="text" name="Address" id="Address" required>
+            </div>
+            <div>
+                <div>
+                    <br>
+                  <label style="margin: 20px;" for="Phone no" >Phone no:</label>
+                   <input type="text" name="number" id="number" required>
+                  </div>
+                  <div>
+             <br>
+            <label> Date of Birth:</label>
+            <input type="date" name="exp_date" id="exp_date" required>
+        </div>
+        <div>
+             <br>
+             <input type="radio" name="Gender" id="Male" required> Male
+             <input type="radio" name="Gender" id="Female" required> Female
+            </div>
+             <br>
+                <button type="submit" value="Submit">Submit</button>
+        </fieldset>
+         </form>    
+         <div id="Instagram-button">
+            <a href="https://insta.me/Captain Warraich" target="_blank">
+                <img src="Instagram_logo_2022.svg.webp" alt="instagram" width="100" height="80">
+                <span></span>
+            </a>
+        </div>
+        <footer>
+            <div id="footer-content">
+                <h2>Contact Us here:</h2>
+                <pre>
+                    Insta_ID: Captain Warraich
+                    Email: alishaabbas686@gmail.com
+                </pre>
+                <p style="margin-right: 12px;">Copyright &copy; 2023</p>
+            </div>
+        </footer>
+       
+       
+       
+    
+    <script>
+        function validateForm() {
+            var Fname = document.getElementById("Fname").value;
+            var Lname = document.getElementById("Lname").value;
+
+            if (Fname.trim() === "" || Lname.trim() === "") {
+                document.getElementById("errorMessage").textContent = "Fill in all required fields.";
+                return false; // Prevent form submission
+            }
+
+            // You can add more validation for other fields if needed.
+
+            return true; // Allow form submission if all fields are filled
+        }
+    </script>
+    
+    <script>
+        function changeBackgroundColor(elementId) {
+            var element = document.getElementById(elementId);
+            var colorSelect = document.getElementById("colorSelect");
+            if (element && colorSelect) {
+                var selectedColor = colorSelect.value;
+                element.style.backgroundColor = selectedColor;
+            }
+        }
+    </script>
+
+        
+     
+    
+    
+</body>
+</html>

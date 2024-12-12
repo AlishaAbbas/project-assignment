@@ -1,0 +1,186 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Educational Website</title>
+        <style>
+
+     #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background image to the hero section */
+#hero {
+    background: url('hero-iub.png') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style the "Browse Courses" button */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+/* Style course containers */
+.course {
+    text-align: center;
+    margin: 20px;
+}
+
+.course img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add your own custom styles as needed */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #44074a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 120px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(240, 0, 0);
+}
+nav a:last-child {
+    margin-right: 0;
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add your own custom styles as needed */
+
+
+#hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color:white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #000508;
+    color:rgb(243, 239, 239);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Courses section styles */
+#courses {
+    background-color: #fff;
+    padding: 40px 0;
+}
+ #hero .btn:hover {
+  background-color: rgb(30, 4, 63);
+}
+
+
+</style>
+        </style>
+    </head>
+    <body>
+        <video id="video-background"  autoplay loop muted playinline>
+        <source src="IUB - E-Portal.mp4" type="video/mp4">
+        </video>
+        <header>
+            <img src="iub.png" alt="Iub Logo">
+            <nav>
+                <a href="form.html">Home</a>
+                <a href="courses.html">Departments</a>
+                <a href="About.html">About Us</a>
+                <a href="Login.html">Logout</a>
+            </nav>
+        </header>
+        <section id="hero">
+            <h1>Welcome to Islamia University Bahawalpur</h1>
+            <p>Your gateway to knowledge and learning.</p>
+            <a href="courses.html" class="btn">Browse Courses</a>
+        </section>
+        <footer>
+            <p>&copy; IUB Website</p>
+        </footer>
+    </body>
+    </html>
